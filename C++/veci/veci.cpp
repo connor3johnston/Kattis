@@ -1,6 +1,6 @@
 /*
 Rating: ~ 1.9 / 10
-Link: https://open.kattis.com/problems/twostones
+Link: https://open.kattis.com/problems/veci
 */
 
 #include<iostream>

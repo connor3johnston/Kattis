@@ -1,6 +1,6 @@
 /*
 Rating: ~ 1.6 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/areal
 */
 
 #include <iostream>
