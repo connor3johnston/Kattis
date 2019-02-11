@@ -1,3 +1,9 @@
+/*
+Rating: ~ 1.2 / 10
+Link: https://open.kattis.com/problems/lastfactorialdigit
+*/
+
+import java.io.*;
 import java.util.*;
 
 public class lastfactorialdigit {

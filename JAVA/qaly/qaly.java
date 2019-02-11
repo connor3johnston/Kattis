@@ -1,4 +1,10 @@
+/*
+Rating: ~ 1.2 / 10
+Link: https://open.kattis.com/problems/qaly
+*/
+
 import java.io.*;
+import java.util.*;
 
 public class qaly {
   public static void main(String[] args) throws IOException {
@@ -12,4 +18,3 @@ public class qaly {
     System.out.println(sum);
   }
 }
-
