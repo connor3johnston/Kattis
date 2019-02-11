@@ -1,6 +1,6 @@
 /*
 Rating: ~ 4.6 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/cd
 */
 
 import java.io.BufferedReader;

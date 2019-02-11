@@ -1,6 +1,6 @@
 /*
 Rating: ~ 2.8 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/loowater
 */
 
 import java.util.*;

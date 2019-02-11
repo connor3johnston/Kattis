@@ -1,6 +1,6 @@
 /*
 Rating: ~ 1.3 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/alphabetspam
 */
 
 import java.util.Scanner;

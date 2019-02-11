@@ -1,6 +1,6 @@
 /*
 Rating: ~ 1.8 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/mosquito
 */
 
 import java.util.*;

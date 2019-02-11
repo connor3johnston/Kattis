@@ -1,6 +1,6 @@
 /*
 Rating: ~ 2.1 / 10
-Link: https://open.kattis.com/problems/turtlemaster
+Link: https://open.kattis.com/problems/beehives
 */
 
 import java.util.Scanner;

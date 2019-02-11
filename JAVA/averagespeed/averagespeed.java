@@ -1,6 +1,6 @@
 /*
 Rating: ~ 3.5 / 10
-Link: https://open.kattis.com/problems/turtlemaster
+Link: https://open.kattis.com/problems/averagespeed
 */
 
 import java.util.*;

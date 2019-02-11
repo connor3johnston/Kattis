@@ -1,6 +1,6 @@
 /*
 Rating: ~ 3.2 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/8queens
 */
 
 import java.util.Scanner;

@@ -1,6 +1,6 @@
 /*
 Rating: ~ 3.1 / 10
-Link: https://open.kattis.com/problems/acm2
+Link: https://open.kattis.com/problems/tutorial
 */
 
 import java.util.*;

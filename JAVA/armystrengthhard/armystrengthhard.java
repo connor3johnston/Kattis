@@ -1,6 +1,6 @@
 /*
 Rating: ~ 2.0 / 10
-Link: https://open.kattis.com/problems/armystrengtheasy
+Link: https://open.kattis.com/problems/armystrengthhard
 */
 
 import java.io.*;
