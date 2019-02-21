@@ -13,5 +13,7 @@ def main():
       S += students.pop()
       students.pop(0)
     print(S)
+
+
 if __name__ == "__main__":
   main()

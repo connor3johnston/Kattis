@@ -1,11 +1,11 @@
 # Rating: ~ 5.2 / 10
 # Link: https://open.kattis.com/problems/virtualfriends
 
-def union(ships: list, root2: str, root1: str):
+def union(ships, root2, root1):
   ships[root2] = root1
 
 
-def find(ships: dict, person: str):
+def find(ships, person):
   if ships[person] == person:
     return person
   ships[person] = find(ships, ships[person])

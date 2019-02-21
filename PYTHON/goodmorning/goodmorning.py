@@ -1,7 +1,7 @@
 # Rating: ~ 3.0 / 10
 # Link: https://open.kattis.com/problems/goodmorning
 
-def bfs(possible: list, stack: list, moves: dict):
+def bfs(possible, stack, moves):
   while stack:
     here = stack.pop(0)
     add = moves[int(here[-1])]

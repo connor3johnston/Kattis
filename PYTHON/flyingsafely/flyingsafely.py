@@ -9,5 +9,6 @@ def main():
       a,b = input().split()
     print(cities-1)
 
+
 if __name__ == "__main__":
   main()

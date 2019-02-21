@@ -2,6 +2,7 @@
 # Link: https://open.kattis.com/problems/wordcloud
 
 import math
+
 def main():
   line = input().split()
   max_width = int(line[0])

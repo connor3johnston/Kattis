@@ -1,13 +1,13 @@
 # Rating: ~ 2.5 / 10
 # Link: https://open.kattis.com/problems/reachableroads
 
-def union(track: list, l: int, r: int):
+def union(track, l, r):
   parL = find(track, l)
   parR = find(track, r)
   track[parR] = parL
 
 
-def find(track: list, x: int):
+def find(track, x):
   if track[x] == x:
     return x
   track[x] = find(track, track[x])
@@ -27,6 +27,7 @@ def main():
     for _ in range(roads):
       print_.add(find(track, _))
     print(len(print_)-1)
+
 
 if __name__ == "__main__":
   main()

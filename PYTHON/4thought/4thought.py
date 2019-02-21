@@ -1,4 +1,4 @@
-def order_of_operations(eq: list) -> list:
+def order_of_operations(eq):
   """The equation gathered from the main method is processed into postfix
   notation based on the order of operations. The method employs a list
   that acts as a stack to maintain the seen operators."""
@@ -18,8 +18,6 @@ def order_of_operations(eq: list) -> list:
           post_fix.append(check)
           check = operators.pop(-1)
       except IndexError: #Used to track matching parentheses (leftover right)
-        print()
-        print('You are missing leading parentheses.')
         return ['Invalid']
     elif variable in check_operators: #All while loops below maintain operator precedence
       if variable == '^':
@@ -52,7 +50,7 @@ def order_of_operations(eq: list) -> list:
     return post_fix
 
 
-def solve(post_fix: list) -> int:
+def solve(post_fix):
   """The solve function takes in the postfix notation found
   earlier and solves the equation based on said notation.
   It employs a list as a stack to contain yet to be used
@@ -79,8 +77,6 @@ def solve(post_fix: list) -> int:
           track = first**second
         nums.append(track) #Places the converted value on the stack
       except ZeroDivisionError: #Catches division by zero
-        print()
-        print('You tried to divide by zero. Do you take me for a fool?')
         return 'Invalid'
     else: #Converts the strings to floats and adds them to the stack
       nums.append(int(variable))

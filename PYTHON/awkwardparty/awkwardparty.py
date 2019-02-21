@@ -13,5 +13,6 @@ def main():
     repeat[person] = index
   print(lowest)
 
+
 if __name__ == "__main__":
   main()
