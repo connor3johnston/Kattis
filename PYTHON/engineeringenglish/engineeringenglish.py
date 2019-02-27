@@ -16,8 +16,6 @@ def main():
       else:
         build += word + ' '
         seen.add(low)
-    build = build.rstrip()
-    build = build.lstrip()
     print(build)
 
 
