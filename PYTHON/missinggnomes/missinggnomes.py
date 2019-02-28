@@ -1,11 +1,14 @@
 # Rating: ~ 2.3 / 10
 # Link: https://open.kattis.com/problems/missinggnomes
 
+from sys import stdin, stdout
+
 def main():
-  n, m = map(int, input().split())
+  line = stdin.readline()
+  n, m = map(int, line.split())
   found = list()
-  for x in range(m):
-    found.append(int(input()))
+  for line in stdin:
+    found.append(int(line))
   check = set(found)
   out = ''
   cur = 0
@@ -20,7 +23,7 @@ def main():
   while cur <= n:
     out += str(cur) + '\n'
     cur += 1
-  print(out)
+  stdout.write(out)
 
 
 if __name__ == "__main__":
