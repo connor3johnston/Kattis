@@ -4,17 +4,12 @@
 def main():
   n, m = map(int, input().split())
   found = list()
-  max_ = 0
   for x in range(m):
-    g = int(input())
-    found.append(g)
-    if g > max_:
-      max_ = g
+    found.append(int(input()))
   check = set(found)
   out = ''
   cur = 0
-  for index in range(len(found)):
-    num = found[index]
+  for num in found:
     while cur < num:
       cur += 1
       if cur in check:
