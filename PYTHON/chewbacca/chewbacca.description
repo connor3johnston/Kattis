@@ -1,0 +1,13 @@
+#### Chewbacca ####
+
+You are given a tree of out-degree [1;31mK[0m with [1;31mN[0m nodes or, in other words, each node can have at most [1;31mK[0m children. The tree is constructed so it is of the “lowest energy”: the nodes are placed in a new depth of the tree only when all the places (from left to right) in the previous depth have been filled. This is also the order of enumerating the nodes, starting with 1. Picture 1 depicts an example of a tree of order [1;31m3[0m with [1;31m9[0m nodes.
+
+You need to output answers to [1;31mQ[0m queries in the form of [1;31mx[0m [1;31my[0m, where the answer is the minimal number of steps needed to get from node [1;31mx[0m to node [1;31my[0m.
+
+#### Input ####
+
+The first line of input contains the integers [1;31mN[0m ($1 ≤ N ≤ 10^{15} [1;31m), [0mK[1;31m ([0m1 ≤ K ≤ 1\, 000[1;31m) and [0mQ[1;31m ([0m1 ≤ Q ≤ 100\, 000$) from the task. Each of the following [1;31mQ[0m lines contains pairs [1;31mx[0m $y[1;31m ([0m1 ≤ x, y ≤ N$, [1;31mx \neq y[0m) from the task.
+
+#### Output ####
+
+Output [1;31mQ[0m lines, each line containing the answer to a query from the task.
