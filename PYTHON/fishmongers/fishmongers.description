@@ -1,0 +1,21 @@
+#### Fishmongers ####
+
+You fish fish.
+
+You hate fish.
+
+You love monies.
+
+Therefore sell fish.
+
+To fishmongers.
+
+For maximum profit.
+
+#### Input ####
+
+The first line of input contains two integers [1;31mn[0m ($1 ≤ n ≤ 100\, 000$), the number of fish you have to sell, and [1;31mm[0m ($1 ≤ m ≤ 100\, 000$), the number of fishmongers. On the second line follows [1;31mn[0m space-separated integers $w_1, w_2, \ldots , w_ n$, the weight of each of your fish in kilograms ($1 ≤ w_ i ≤ 100\, 000$). Finally, there are [1;31mm[0m lines, the [1;31mj[0m’th of which consisting of two integers [1;31mx_ j[0m ($1 ≤ x_ j ≤ 100\, 000[1;31m) and [0mp_ j$ ($1 ≤ p_ j ≤ 100\, 000$), respectively indicating how many fish the [1;31mj[0m’th fishmonger wants to buy and how many monies he will pay per kilogram.
+
+#### Output ####
+
+A single integer, the maximum number of monies you can obtain by selling your fish to the fishmongers.
