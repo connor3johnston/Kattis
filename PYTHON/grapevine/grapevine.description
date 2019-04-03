@@ -1,0 +1,19 @@
+#### Through the Grapevine ####
+
+According to Wikipedia, to hear something “through the grapevine” is to learn of something informally and unofficially by means of gossip or rumor. In this problem, you are tasked with determining how many people will hear about a particular rumor “through the grapevine” after a certain number of days.
+
+Rumors are always started by a single person. On any given day, a person who knows the rumor can spread it by telling the people that they know. Upon hearing of the rumor, that person must wait until the following day before they can begin to spread it themselves. Furthermore, some people are skeptical and will only spread the rumor once they’ve heard it from a number of distinct sources. However once a person has heard the rumor from enough people, they will always try to spread the rumor to as many people as possible.
+
+#### Input ####
+
+The first line will contain three integers: [1;31m0 < n ≤ 100\, 000[0m, [1;31m0 < m ≤ 100\, 000[0m, and $0 ≤ d ≤ 10\, 000[1;31m, where [0mn$ is the number of people, [1;31mm[0m is the number of connections, and [1;31md[0m is the number of days that elapse.
+
+The next [1;31mn[0m lines will each consist of a unique string [1;31ms[0m and an integer [1;31m0 ≤ t ≤ 1000[0m where [1;31ms[0m is the name of a person and [1;31mt[0m is their level of skepticism. In other words, person [1;31ms[0m must hear the rumor from [1;31mt[0m distinct other people before [1;31ms[0m will begin spreading the rumor.
+
+This is followed by [1;31mm[0m lines each consisting of two strings [1;31mu[0m and [1;31mv[0m which indicates that person [1;31mu[0m and person [1;31mv[0m know each other. Each of these lines represents a unique pair of persons.
+
+The final line will contain a single string [1;31mr[0m, the name of the person that the rumor originates from. Note that [1;31mr[0m is the only person with skepticism [1;31mt = 0[0m. All strings are between [1;31m1[0m and [1;31m20[0m characters long and consists only of English lowercase or uppercase letters and digits.
+
+#### Output ####
+
+Output a single integer: the number of people (not including person [1;31mr[0m) that have heard the rumor after [1;31md[0m days.
