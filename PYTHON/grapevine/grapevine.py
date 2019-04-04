@@ -1,4 +1,4 @@
-# Rating: ~ 5.3 / 10
+# Rating: ~ 3.5 / 10
 # Link: https://open.kattis.com/problems/grapevine
 
 def main():
