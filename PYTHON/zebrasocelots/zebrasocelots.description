@@ -1,0 +1,9 @@
+#### Zebras and Ocelots ####
+
+#### Input ####
+
+Input consists of a number [1;31mN[0m in the range [1;31m1[0m to [1;31m60[0m, followed by [1;31mN[0m lines, each of which is a single character, either Z (for zebra) or O (for ocelot). These give the order of the creatures from top (first) to bottom (last).
+
+#### Output ####
+
+Output should be a single integer giving the number of times the bell must toll in order for there to be no more ocelots.
