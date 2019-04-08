@@ -1,0 +1,11 @@
+#### Reduced ID Numbers ####
+
+T. Chur teaches various groups of students at university U. Every U-student has a unique Student Identification Number (SIN). A SIN [1;31ms[0m is an integer in the range $0\le s\le \mathit{MaxSIN}[1;31m with [0m\mathit{MaxSIN}=10^6-1$. T. Chur finds this range of SINs too large for identification within her groups. For each group, she wants to find the smallest positive integer [1;31mm[0m, such that within the group all SINs reduced modulo [1;31mm[0m are unique.
+
+#### Input ####
+
+The first line of input contains the integer [1;31mG[0m ([1;31m1\le G\le 300[0m): the number of students in the group. The following [1;31mG[0m lines each contain one SIN. The SINs are distinct, though not necessarily sorted.
+
+#### Output ####
+
+Output one line containing the smallest modulus [1;31mm[0m, such that all SINs reduced modulo [1;31mm[0m are distinct.
