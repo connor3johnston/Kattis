@@ -1,0 +1,23 @@
+#### Thanos the Hero ####
+
+Thanos, as we all know, is the beloved character from a popular movie franchise who is a misunderstood hero and totally not a villain at all. Also, his favorite hobby is intergalactic mass genocide.
+
+It is not Thanos’s goal to kill everyone in the entire universe – that’d make him a villain. Instead, Thanos is the hero that tries to create the perfect universe by reducing each world to what he believes is an appropriate population.
+
+Thanos goes by one rule: For any two worlds [1;31mX[0m, [1;31mY[0m, if Thanos prefers [1;31mX[0m to [1;31mY[0m, then [1;31mX[0m’s population must be strictly greater than [1;31mY[0m’s.
+
+There are in total [1;31mN[0m worlds in the universe, and Thanos has a strict total ordering of these worlds based on his preference. When Thanos’s rule is fulfilled on his ordering, the universe is perfect.
+
+Thanos is now ready to go on a massive killing spree to create the perfect universe. At the same time, Thanos wants to minimize the number of lives he has to take; that is right, they call him “Thanos the merciful”, and totally not because he’s too lazy to kill more than he has to.
+
+Given the ordering of Thanos’s preference of worlds and each world’s population, Thanos wants your help to determine how many lives he has to take exactly.
+
+#### Input ####
+
+The first line contains a single integer [1;31mN[0m [1;31m(1 ≤ N ≤ 50\, 000)[0m.
+
+The next line contains [1;31mN[0m integers separated by single spaces ($1 ≤ a_ i ≤ 10^9[1;31m), [0ma_ i$ represents the population of the [1;31mi[0m-th world. Thanos prefers the [1;31mi+1[0m-st world to the [1;31mi[0m-th world.
+
+#### Output ####
+
+One number which represents the number of lives Thanos takes today. If it is impossible to create the perfect universe, output [1;31m1[0m (Thanos kills himself).
