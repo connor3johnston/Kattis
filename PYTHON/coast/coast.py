@@ -1,6 +1,8 @@
 # Rating: ~ 3.3 / 10
 # Link: https://open.kattis.com/problems/coast
 
+from sys import stdin, stdout
+
 def bfs(levels, r, c, visited):
   queue = [(0, 0)]
   visited[0][0] = True
@@ -40,7 +42,7 @@ def bfs(levels, r, c, visited):
 
 
 def main():
-  r, c = map(int, input().split())
+  r, c = map(int, stdin.readline().split())
   levels = list()
   visited = list()
 
@@ -48,7 +50,7 @@ def main():
   visited.append([False] * (c + 2))
   for x in range(r):
     add = [0]
-    add.extend([int(y) for y in list(input())])
+    add.extend([int(y) for y in list(stdin.readline().strip())])
     add.append(0)
 
     levels.append(add)
