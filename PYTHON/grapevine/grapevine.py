@@ -1,22 +1,24 @@
+from sys import stdin
+
 # Rating: ~ 3.5 / 10
 # Link: https://open.kattis.com/problems/grapevine
 
 def main():
-  n, m, d = map(int, input().split())
+  n, m, d = map(int, stdin.readline().split())
   skeptical = dict()
   ships = dict()
   index = 0
   for x in range(n):
-    line = input().split()
+    line = stdin.readline().split()
     name = line[0]
     needed = int(line[1])
     skeptical[name] = needed
     ships[name] = set()
   for y in range(m):
-    pair = input().split()
+    pair = stdin.readline().split()
     ships[pair[0]].add(pair[1])
     ships[pair[1]].add(pair[0])
-  origin = input()
+  origin = stdin.readline().strip()
   count = 0
   sources = [origin]
   seen = {origin}
