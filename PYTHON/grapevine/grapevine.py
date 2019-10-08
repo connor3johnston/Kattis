@@ -1,40 +1,40 @@
 from sys import stdin
+from collections import deque
 
-# Rating: ~ 7.2 / 10
+# Rating: ~ 3.5 / 10
 # Link: https://open.kattis.com/problems/grapevine
 
 def main():
-  n, m, d = map(int, stdin.readline().split())
-  skeptical = dict()
-  ships = dict()
-  index = 0
+  lines = deque(stdin.readlines())
+
+  n, m, d = map(int, lines.popleft().strip().split())
+  skeptical = {}
+  ships = {}
   for x in range(n):
-    line = stdin.readline().split()
+    line = lines.popleft().strip().split()
     name = line[0]
     needed = int(line[1])
     skeptical[name] = needed
     ships[name] = set()
   for y in range(m):
-    pair = stdin.readline().split()
+    pair = lines.popleft().strip().split()
     ships[pair[0]].add(pair[1])
     ships[pair[1]].add(pair[0])
-  origin = stdin.readline().strip()
-  count = 0
-  sources = [origin]
+  origin = lines.popleft().strip()
+  sources = deque([origin])
   seen = {origin}
   for z in range(d):
-    temp = list()
+    temp = deque()
     while sources:
       cur = sources.pop()
       for person in ships[cur]:
         if person not in seen:
-          count += 1
           seen.add(person)
         skeptical[person] -= 1
         if skeptical[person] == 0:
           temp.append(person)
     sources = temp
-  print(count)
+  print(len(seen) - 1)
 
 
 if __name__ == "__main__":
