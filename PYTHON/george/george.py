@@ -37,11 +37,10 @@ class Graph():
 
       sptSet[u] = True
 
-      for v in range(1, self.V + 1):
-        if v in self.graph[u] and self.graph[u][v] > 0 and sptSet[v] == False:
+      for v in self.graph[u]:
           wait = self.waitTime(u, v, dist[u])
 
-          if dist[v] > dist[u] + wait:
+          if dist[v] > dist[u] + wait and sptSet[v] == False:
             dist[v] = dist[u] + wait
 
     return dist
