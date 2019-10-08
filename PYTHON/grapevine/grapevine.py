@@ -1,6 +1,6 @@
 from sys import stdin
 
-# Rating: ~ 3.5 / 10
+# Rating: ~ 7.2 / 10
 # Link: https://open.kattis.com/problems/grapevine
 
 def main():
