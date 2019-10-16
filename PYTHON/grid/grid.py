@@ -2,31 +2,31 @@
 # Link: https://open.kattis.com/problems/grid
 
 def bfs(board, start, end, visited):
-  stack = [start]
-  while stack:
-    current = stack.pop(0)
+  q = [start]
+  while q:
+    current = q.pop(0)
     if current[0] == end[0] and current[1] == end[1]:
       return current[2]
-    neighbors(board, current, stack, visited)
+    neighbors(board, current, q, visited)
   return -1
 
 
-def neighbors(board, current, stack, visited):
+def neighbors(board, current, q, visited):
   r = current[0]
   c = current[1]
   count = current[2]
   moves = int(board[r][c])
   if r - moves > -1 and not visited[r - moves][c]:
-    stack.append((r - moves, c, count + 1))
+    q.append((r - moves, c, count + 1))
     visited[r - moves][c] = True
   if r + moves < len(board) and not visited[r + moves][c]:
-    stack.append((r + moves, c, count + 1))
+    q.append((r + moves, c, count + 1))
     visited[r + moves][c] = True
   if c - moves > -1 and not visited[r][c - moves]:
-    stack.append((r, c - moves, count + 1))
+    q.append((r, c - moves, count + 1))
     visited[r][c - moves] = True
   if c + moves < len(board[0]) and not visited[r][c + moves]:
-    stack.append((r, c + moves, count + 1))
+    q.append((r, c + moves, count + 1))
     visited[r][c + moves] = True
 
 
