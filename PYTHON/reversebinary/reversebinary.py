@@ -1,8 +1,11 @@
-# Rating: ~ 1.5 / 10
+# Rating: ~ 1.4 / 10
 # Link: https://open.kattis.com/problems/reversebinary
 
 def main():
-  print(int(''.join(list(reversed(list(bin(int(input())))[2::]))), 2))
+  curr = str(bin(int(input())))
+  curr = curr.split('b')[1]
+
+  print(int(''.join(reversed(curr)), 2))
 
 
 if __name__ == "__main__":
