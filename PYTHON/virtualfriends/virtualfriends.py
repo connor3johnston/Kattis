@@ -1,47 +1,50 @@
-# Rating: ~ 5.2 / 10
+from sys import stdin, stdout
+# Rating: ~ 4.5 / 10
 # Link: https://open.kattis.com/problems/virtualfriends
 
-def union(ships, root2, root1):
-  ships[root2] = root1
+def union(parent, x, y):
+  parent[find(parent, y)] = find(parent, x)
 
 
-def find(ships, person):
-  if ships[person] == person:
-    return person
-  ships[person] = find(ships, ships[person])
-  return ships[person]
+def find(parent, child):
+  if parent[child] != child:
+    parent[child] = find(parent, parent[child])
+
+  return parent[child]
 
 
 def main():
-  cases = int(input())
+  cases = int(stdin.readline().strip())
+  out = []
+
   for x in range(cases):
     ships = dict()
     sizes = dict()
-    F = int(input())
-    for y in range(F):
-      ship = input().split()
-      if ship[0] not in ships:
-        ships[ship[0]] = ship[0]
-      if ship[1] not in ships:
-        ships[ship[1]] = ship[1]
-      root1 = find(ships, ship[0])
-      root2 = find(ships, ship[1])
+    num = int(stdin.readline().strip())
+
+    for y in range(num):
+      x, y = sorted(stdin.readline().split())
+      if x not in ships:
+        ships[x] = x
+        sizes[x] = 1
+      if y not in ships:
+        ships[y] = y
+        sizes[y] = 1
+
+      root1 = find(ships, x)
+      root2 = find(ships, y)
 
       if root1 == root2:
-        print(sizes[root2])
+        out.append(str(sizes[root2]))
         continue
 
-      union(ships, root2, root1)
+      both = sizes[root1] + sizes[root2]
+      out.append(str(both))
+      union(ships, x, y)
+      sizes[root1] = both
+      sizes[root2] = both
 
-      if root1 not in sizes:
-        sizes[root1] = 1
-      if root2 not in sizes:
-        sizes[root2] = 1
-
-      sizes[root1] += sizes[root2]
-      del sizes[root2]
-
-      print(sizes[root1])
+  stdout.write('\n'.join(out))
 
 
 if __name__ == "__main__":
