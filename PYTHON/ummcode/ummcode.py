@@ -15,7 +15,7 @@ def main():
   code = []
   for word in words:
     if not set(word).intersection(invalid):
-      for letter in list(word):
+      for letter in word:
         if letter == 'u':
           code.append('1')
         elif letter == 'm':
